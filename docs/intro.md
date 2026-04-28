@@ -18,12 +18,12 @@ description: 날짜별 학습 일지를 기록하고, 반복되는 개념은 나
 
 ```md
 ---
-title: 2026.04.27 학습 일지
-description: OS 프로세스/스레드, TCP 3-way handshake, 정처기 기출 20문제
-tags: [OS, Network, 정보처리기사]
+title: YYYY-MM-DD 학습 일지
+description: 키워드 1, 키워드 2, ...
+tags: [분야1, 분야2, ...]
 ---
 
-# 2026.04.27 학습 일지
+# YYYY-MM-DD 학습 일지
 
 ## 오늘 한 일
 
