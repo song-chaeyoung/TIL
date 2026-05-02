@@ -18,12 +18,37 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            학습 일지 보기
+            href="https://github.com/TODAY-TIL/TIL">
+            GitHub 보러 가기
           </Link>
         </div>
       </div>
     </header>
+  );
+}
+
+function ProfileLinks() {
+  return (
+    <section className={styles.profileLinks}>
+      <div className="container">
+        <div className={styles.guideInner}>
+          <Heading as="h2">소개</Heading>
+          <p>공부한 내용을 꾸준히 기록하고 정리합니다.</p>
+          <div className={styles.guideLinks}>
+            <Link
+              className="button button--primary button--lg"
+              href="https://github.com/song-chaeyoung">
+              개인 GitHub
+            </Link>
+            <Link
+              className="button button--secondary button--lg"
+              href="https://github.com/TODAY-TIL/TIL">
+              TIL 저장소
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -34,6 +59,9 @@ export default function Home() {
       title={siteConfig.title}
       description="Today I Learned">
       <HomepageHeader />
+      <main>
+        <ProfileLinks />
+      </main>
     </Layout>
   );
 }

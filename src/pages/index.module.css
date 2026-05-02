@@ -4,13 +4,10 @@
  */
 
 .heroBanner {
-  padding: 5rem 0;
+  padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(circle at top left, rgba(245, 158, 11, 0.22), transparent 32rem),
-    linear-gradient(135deg, #18332f 0%, #0f1f1d 100%);
 }
 
 @media screen and (max-width: 996px) {
@@ -23,4 +20,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.profileLinks {
+  padding: 3rem 0;
+}
+
+.guideInner {
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.guideInner h2 {
+  margin-bottom: 1rem;
+}
+
+.guideInner p {
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.8;
+  margin: 0 auto 1.5rem;
+  max-width: 620px;
+}
+
+.guideLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+@media screen and (max-width: 576px) {
+  .guideLinks {
+    align-items: stretch;
+    flex-direction: column;
+  }
 }

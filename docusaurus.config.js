@@ -69,7 +69,12 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tilSidebar',
             position: 'left',
-            label: '학습 일지',
+            label: '개요',
+          },
+          {
+            to: '/docs/category/daily',
+            label: '날짜별 기록',
+            position: 'left',
           },
           {
             href: 'https://github.com/TODAY-TIL/TIL',
@@ -85,7 +90,7 @@ const config = {
             title: 'TIL',
             items: [
               {
-                label: '학습 일지',
+                label: '개요',
                 to: '/docs/intro',
               },
             ],
